@@ -88,18 +88,27 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-500 font-black text-slate-950">
-              K
+        <nav className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-4 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-500 font-black text-slate-950">
+                K
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300 sm:text-sm">KENECHUKWU</p>
+                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400 sm:text-xs">TECH-HUB</p>
+              </div>
             </div>
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">KENECHUKWU</p>
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-400">TECH-HUB</p>
-            </div>
+
+            <a
+              href="#contact"
+              className="rounded-full border border-cyan-400/50 bg-cyan-500/10 px-3 py-2 text-xs font-medium text-cyan-200 transition hover:border-cyan-300 hover:bg-cyan-400/20 md:hidden"
+            >
+              Let’s Talk
+            </a>
           </div>
 
-          <div className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+          <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
             <a href="#about" className="transition hover:text-white">About</a>
             <a href="#services" className="transition hover:text-white">Services</a>
             <a href="#work" className="transition hover:text-white">Work</a>
@@ -108,7 +117,7 @@ function App() {
 
           <a
             href="#contact"
-            className="rounded-full border border-cyan-400/50 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:border-cyan-300 hover:bg-cyan-400/20"
+            className="hidden rounded-full border border-cyan-400/50 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:border-cyan-300 hover:bg-cyan-400/20 md:inline-flex"
           >
             Let’s Talk
           </a>
@@ -118,38 +127,38 @@ function App() {
       <main>
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(168,85,247,0.18),transparent_30%)]" />
-          <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-28">
+          <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:px-8 lg:py-28">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.28em] text-cyan-200">
+              <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.22em] text-cyan-200 sm:text-xs">
                 Available for select projects
               </span>
 
-              <h1 className="mt-6 text-4xl font-black leading-tight text-white sm:text-5xl lg:text-7xl">
+              <h1 className="mt-6 text-3xl font-black leading-tight text-white sm:text-5xl lg:text-7xl">
                 Hi, I’m {profile.name}. I build digital experiences people trust.
               </h1>
 
-              <p className="mt-6 max-w-xl text-lg text-slate-300">
+              <p className="mt-6 max-w-xl text-base text-slate-300 sm:text-lg">
                 {profile.bio}
               </p>
 
-              <div className="mt-6 text-sm uppercase tracking-[0.3em] text-slate-400">{profile.title}</div>
+              <div className="mt-6 text-xs uppercase tracking-[0.22em] text-slate-400 sm:text-sm">{profile.title}</div>
 
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#work"
-                  className="rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.02]"
+                  className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.02] sm:px-6"
                 >
                   View My Work
                 </a>
                 <a
                   href="#contact"
-                  className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10 sm:px-6"
                 >
                   Book a Call
                 </a>
               </div>
 
-              <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+              <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                 {stats.map((item) => (
                   <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
                     <div className="text-2xl font-black text-white">{item.value}</div>
@@ -160,13 +169,13 @@ function App() {
             </div>
 
             <div className="relative flex items-center justify-center">
-              <div className="absolute h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl" />
-              <div className="relative w-full max-w-xl overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/70 p-3 shadow-[0_30px_80px_rgba(34,211,238,0.15)] backdrop-blur-xl">
+              <div className="absolute h-52 w-52 rounded-full bg-cyan-500/20 blur-3xl sm:h-64 sm:w-64" />
+              <div className="relative w-full max-w-xl overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/70 p-2 shadow-[0_30px_80px_rgba(34,211,238,0.15)] backdrop-blur-xl sm:p-3">
                 <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10">
                   <img
                     src={profileImage}
                     alt={profile.name}
-                    className="h-[540px] w-full object-cover"
+                    className="h-[320px] w-full object-cover sm:h-[420px] lg:h-[540px]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
 
@@ -299,8 +308,8 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="rounded-[2rem] border border-cyan-500/20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-8 shadow-2xl shadow-cyan-500/10 md:p-12">
+        <section id="contact" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="rounded-[2rem] border border-cyan-500/20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-6 shadow-2xl shadow-cyan-500/10 md:p-12">
             <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Let’s build</p>
@@ -310,12 +319,12 @@ function App() {
                 </p>
               </div>
 
-              <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+              <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 sm:p-6">
                 <div className="space-y-4">
                   {contactMethods.map((item) => (
                     <div key={item.label} className="rounded-xl border border-white/10 bg-slate-950/60 p-4">
-                      <p className="text-xs uppercase tracking-[0.22em] text-slate-400">{item.label}</p>
-                      <p className="mt-2 text-lg font-semibold text-white">{item.value}</p>
+                      <p className="text-[10px] uppercase tracking-[0.22em] text-slate-400 sm:text-xs">{item.label}</p>
+                      <p className="mt-2 break-words text-base font-semibold text-white sm:text-lg">{item.value}</p>
                     </div>
                   ))}
                 </div>
@@ -327,7 +336,7 @@ function App() {
                       href={social.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-2 text-xs font-medium uppercase tracking-[0.2em] text-cyan-200 transition hover:bg-cyan-500/20"
+                      className="rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-2 text-[10px] font-medium uppercase tracking-[0.15em] text-cyan-200 transition hover:bg-cyan-500/20 sm:text-xs"
                     >
                       {social.label}
                     </a>
