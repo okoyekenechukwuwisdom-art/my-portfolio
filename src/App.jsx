@@ -175,38 +175,38 @@ function App() {
                   <img
                     src={profileImage}
                     alt={profile.name}
-                    className="h-[320px] w-full object-cover sm:h-[420px] lg:h-[540px]"
+                    className="h-[340px] w-full object-cover object-center sm:h-[420px] lg:h-[540px]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
 
-                  <div className="absolute left-5 top-5 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.26em] text-emerald-300">
+                  <div className="absolute left-3 top-3 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2 py-1 text-[8px] font-semibold uppercase tracking-[0.22em] text-emerald-300 sm:left-5 sm:top-5 sm:px-3 sm:py-1 sm:text-[10px]">
                     Available for work
                   </div>
 
-                  <div className="absolute right-5 top-5 rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 backdrop-blur-md">
-                    <div className="text-[10px] uppercase tracking-[0.25em] text-slate-400">Experience</div>
-                    <div className="mt-1 text-2xl font-black text-white">6+</div>
+                  <div className="absolute right-3 top-3 rounded-xl border border-white/10 bg-slate-950/60 px-2.5 py-2 backdrop-blur-md sm:right-5 sm:top-5 sm:px-4 sm:py-3">
+                    <div className="text-[8px] uppercase tracking-[0.2em] text-slate-400 sm:text-[10px]">Experience</div>
+                    <div className="mt-1 text-lg font-black text-white sm:text-2xl">6+</div>
                   </div>
 
-                  <div className="absolute bottom-5 left-5 right-5 rounded-[1.4rem] border border-white/10 bg-slate-950/55 p-5 backdrop-blur-md">
-                    <div className="flex items-center justify-between gap-4">
+                  <div className="absolute bottom-3 left-3 right-3 rounded-[1.2rem] border border-white/10 bg-slate-950/55 p-3 backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-5 sm:p-5">
+                    <div className="flex items-center justify-between gap-3 sm:gap-4">
                       <div>
-                        <p className="text-[10px] uppercase tracking-[0.28em] text-cyan-300">Profile</p>
-                        <h2 className="mt-2 text-2xl font-bold text-white">{profile.name}</h2>
+                        <p className="text-[8px] uppercase tracking-[0.22em] text-cyan-300 sm:text-[10px]">Profile</p>
+                        <h2 className="mt-1 text-lg font-bold text-white sm:mt-2 sm:text-2xl">{profile.name}</h2>
                       </div>
-                      <div className="rounded-full bg-cyan-500/15 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                      <div className="rounded-full bg-cyan-500/15 px-2 py-1 text-[8px] font-semibold uppercase tracking-[0.18em] text-cyan-200 sm:px-3 sm:text-[10px]">
                         UI / UX
                       </div>
                     </div>
 
-                    <div className="mt-5 grid grid-cols-2 gap-3 text-sm text-slate-300">
-                      <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-                        <div className="text-lg font-black text-white">12</div>
-                        <div className="mt-1 text-xs text-slate-400">Launches</div>
+                    <div className="mt-3 grid grid-cols-2 gap-2 text-sm text-slate-300 sm:mt-5 sm:gap-3">
+                      <div className="rounded-xl border border-white/10 bg-white/5 p-2 sm:p-3">
+                        <div className="text-base font-black text-white sm:text-lg">12</div>
+                        <div className="mt-1 text-[9px] text-slate-400 sm:text-xs">Launches</div>
                       </div>
-                      <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-                        <div className="text-lg font-black text-white">3x</div>
-                        <div className="mt-1 text-xs text-slate-400">Growth</div>
+                      <div className="rounded-xl border border-white/10 bg-white/5 p-2 sm:p-3">
+                        <div className="text-base font-black text-white sm:text-lg">3x</div>
+                        <div className="mt-1 text-[9px] text-slate-400 sm:text-xs">Growth</div>
                       </div>
                     </div>
                   </div>
