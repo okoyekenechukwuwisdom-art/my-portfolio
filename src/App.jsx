@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+
 const profile = {
   name: 'Kenechukwu',
   title: 'Frontend Developer • UI/UX Designer • Tech Consultant',
@@ -354,6 +356,7 @@ function App() {
           <p>Designed for bold brands and ambitious ideas.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
